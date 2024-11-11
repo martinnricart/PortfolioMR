@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>RicartLab</title>
+    <link rel="icon" href="logo.ico" type="">
+  </head>
+  <body class="bg-soft-black">
+    <div id="trancision"></div>
+
+    <div class="fade-in" id="content">
+      <header>
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="images/logomr.png" alt="Logomr" />
+          </a>
+        </div>
+        
+        <!-- Botón hamburguesa para móviles -->
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="hamburger-icon"></span>
+        </button>
+        
+        <nav class="nav-menu">
+          <ul>
+            <a href="index.html" class="text-decoration-none">
+              <li data-es="Mi Trabajo" data-en="My Work">Mi Trabajo</li>
+            </a>
+            <a href="certificados.html" class="text-decoration-none">
+              <li data-es="Certificados" data-en="Certificates">Certificados</li>
+            </a>
+            <a href="about.html" class="text-decoration-none">
+              <li data-es="Sobre Mi" data-en="About Me">Sobre Mi</li>
+            </a>
+          </ul>
+        </nav>
+        <button id="translateBtn" class="btn btn-primary">En</button>
+      </header>
+        <br>
+        <div class="bienvenida">
+            <h1 data-es="Martín Ricart - Diseñador Full-Stack" data-en="Martin Ricart - Full-Stack Designer">Martín Ricart - Full-Stack Designer</h1>
+        </div>
+        <div class="mainText">
+            <p data-es="Desarrollador FrontEnd y Diseñador UX/UI." data-en="Front-End Developer and UX/UI Designer.">Desarrollador FrontEnd y Diseñador UX/UI.</p>
+        </div>
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 hover-overlay">
+                        <img src="./images/cdrpreview.png" class="card-img-top" alt="CDR - Cuadros">
+                        <div class="overlay-content">
+                            <h3 data-es="CDR - Cuadros" data-en="CDR - Paintings">CDR - Cuadros</h3>
+                            <p data-es="E-Commerce de cuadros personalizados, con API de pago incluida." data-en="Custom painting e-commerce, with integrated payment API.">E-Commerce de cuadros personalizados, con API de pago incluida.</p>
+                            <div class="skill-images-container">
+                            <i class="fab fa-js-square skill-icon" style="color: #f7df1e" title="JavaScript"></i>
+                            <i class="fab fa-bootstrap skill-icon" style="color: #563d7c" title="Bootstrap"></i>
+                        </div>
+                            <div class="button-group">
+                                <a href="https://martinnricart.github.io/" class="btn btn-primary" title="Ir al sitio web">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/martinnricart/CDR-eCommerce" target="_blank" class="btn btn-secondary" title="Ir a GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="col">
+                    <div class="card h-100 hover-overlay">
+                        <img src="./images/emojiversepreview.png" class="card-img-top" alt="Emojiverse">
+                        <div class="overlay-content">
+                            <h3 data-es="Emojiverse" data-en="Emojiverse">Emojiverse</h3>
+                            <p data-es="¿Necesitas un emoji? ¡En el Emojiverse lo vas a encontrar!" data-en="Need an emoji? You'll find it in Emojiverse!">¿Necesitas un emoji? ¡En el Emojiverse lo vas a encontrar! Hecha con Next JS</p>
+                            <div class="skill-images-container">
+                                <img src="images/logonextjs.png" alt="NextJS" class="skill-img" title="NextJS" />
+                                <i class="fab fa-bootstrap skill-icon" style="color: #563d7c" title="Bootstrap"></i>
+                            
+                        </div>
+                            <div class="button-group">
+                                <a href="https://emojiverse-two.vercel.app/" target="_blank" class="btn btn-primary" title="Ir al Sitio Web"> 
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/martinnricart/Emojiverse" target="_blank" class="btn btn-secondary" title="Ir a GitHub">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 hover-overlay">
+                        <img src="./images/startuppreview.png" class="card-img-top" alt="StartUp Studio">
+                        <div class="overlay-content">
+                            <h3 data-es="StartUp Studio" data-en="StartUp Studio">StartUp Studio</h3>
+                            <p data-es="Landing Page para mentoría e inversión en tecnología para emprendedores" data-en="Landing Page for mentoring and investment in technology for entrepreneurs">Landing Page para mentoría e inversión en tecnología para emprendedores</p>
+                            <div class="skill-images-container">
+                            <img src="images/astrologo.png" alt="Astro" class="skill-img" title="Astro" />
+                            <img src="images/tailwindlogo.png" alt="Tailwind CSS" class="tailwind-img" title="Tailwind CSS" />
+                            </div>
+                            <div class="button-group">
+                                <a href="https://startupstudio.digital/" target="_blank" class="btn btn-primary" title="Ir al Sitio Web"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/martinnricart/startup-studio" target="_blank" class="btn btn-secondary" title="Ir a GitHub">
+                                    <i class="fab fa-github"></i> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 hover-overlay">
+                        <img src="./images/hmapreview.png" class="card-img-top" alt="¿Cuanto cuesta una app?">
+                        <div class="overlay-content">
+                            <h3 data-es="¿Cuanto cuesta una app?" data-en="How much does an app cost?">¿Cuanto cuesta una app?</h3>
+                            <p data-es="Desarrollo y diseño UX/UI para cotizacion de aplicacion" data-en="Development and UX/UI design for application quotation">Desarrollo Frontend y diseño UX/UI para cotizacion de aplicacion</p>
+                            <div class="skill-images-container">
+                            <i class="fab fa-react skill-icon" style="color: #61dafb" title="React"></i>
+                            <i class="fab fa-bootstrap skill-icon" style="color: #563d7c" title="Bootstrap"></i>
+                            </div>
+                            <div class="button-group">
+                                <a href="https://cuanto-cuesta-una-app.vercel.app/" target="_blank" class="btn btn-primary" title="Ir al Sitio Web"><i class="fas fa-external-link-alt"></i>
+                                <a href="https://www.figma.com/design/TFdC44D4q3SJBGTIHTg91C/Wireframe-HowMuchApp?node-id=0-1&t=N00Ll9SFMcJOhvxD-0" target="_blank" class="btn btn-dark" title="Ir al Figma">
+                                    <i class="fab fa-figma"></i> 
+                                </a>
+                                <a href="https://github.com/martinnricart/how-much-app" target="_blank" class="btn btn-secondary" title="Ir a GitHub">
+                                    <i class="fab fa-github"></i> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 hover-overlay">
+                        <img src="./images/ecommystore.jpg" class="card-img-top" alt="Ecommy Store">
+                        <div class="overlay-content">
+                            <h3 data-es="Ecommy Store" data-en="Ecommy Store">Ecommy Store</h3>
+                            <p data-es="Diseño UX/UI para pagina de presentacion de servicios." data-en="UX/UI design for service presentation page.">Desarrollo Frontend y Diseño UX/UI para pagina de presentacion de servicios.</p>
+                            <div class="skill-images-container">
+                            <i class="fab fa-js-square skill-icon" style="color: #f7df1e" title="JavaScript"></i>
+                            <img src="images/tailwindlogo.png" alt="Tailwind CSS" class="tailwind-img" title="Tailwind CSS" />
+                            <img src="images/figma.png" alt="Figma" class="skill-img" title="Figma" />
+                        </div>
+                            <div class="button-group">
+                                <a href="https://www.ecommy.store/"  target="_blank" class="btn btn-primary" title="Ir al Sitio Web"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 hover-overlay">
+                        <img src="./images/kulkopreview.png" class="card-img-top" alt="Kulko Store">
+                        <div class="overlay-content">
+                            <h3 data-es="Kulko Store" data-en="Kulko Store">Kulko Store</h3>
+                            <p data-es="Diseño UX/UI para catalogo digital." data-en="UX/UI design for digital catalog.">Diseño UX/UI para catalogo digital.</p>
+                            <div class="figmalogo">
+                            <img src="images/figma.png" alt="Figma" class="skill-img" title="Figma" />
+                        </div>
+                            <div class="button-group">
+                                <a href="https://www.figma.com/design/Ic7M0bEtkXrWbCoXDVLajQ/Entrega%3B-Landing-Kulko?node-id=0-1&t=79d4ja8zr99sjikm-1" target="_blank" class="btn btn-dark" title="Ir Al Figma">
+                                    <i class="fab fa-figma"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 hover-overlay">
+                        <img src="./images/ecommy.jpg" class="card-img-top" alt="ecommy">
+                        <div class="overlay-content">
+                            <h3 data-es="eCommy" data-en="eCommy">eCommy</h3>
+                            <p data-es="Desarrollo de App de delivery de comida & E-Commerce" data-en="Development of Delivery Food App & E-Commerce">Desarrollo de App de delivery de comida & E-Commerce</p>
+                            <p data-es="⚠️Diseño UX/UI en desarollo⚠️" data-en="⚠️UX/UI Design in development⚠️">⚠️Diseño UX/UI en desarollo⚠️</p>
+                                            <div class="skill-images-container">
+                                <img src="images/logonextjs.png" alt="NextJS" class="skill-img" title="NextJS" />
+                                <img src="images/typescript.png" alt="TypeScript" class="skill-img" title="TypeScript" />
+                                <i class="fab fa-bootstrap skill-icon" style="color: #563d7c" title="Bootstrap"></i>
+
+                            </div>
+                
+                            <div class="button-group">
+                                <a href="https://demoecommy.vercel.app/" target="_blank" class="btn btn-primary" title="Ir Al Sitio Web"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/martinnricart/eCommyFood" target="_blank" class="btn btn-secondary" title="Ir a GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+              <div class="col">
+                    <div class="card h-100 hover-overlay">
+                        <img src="./images/splitit.jpg" class="card-img-top" alt="MarketBox">
+                        <div class="overlay-content">
+                            <h3 data-es="Split It App" data-en="Split It App">Split It App</h3>
+                            <p data-es="Lleva un registro de los planes y gastos compartidos con compañeros de piso, amigos y familia." data-en="eCommerce style page, inspired by Mercado Libre style.">Lleva un registro de los planes y gastos compartidos con compañeros de piso, amigos y familia.</p>
+                            <div class="figmalogo">
+                            <img src="images/figma.png" alt="Figma" class="skill-img" title="Figma" />
+                            </div>
+                            <div class="button-group">
+                                <a href="https://www.figma.com/proto/8cHaFGyS1677XkF845GTgs/SPLIT-IT-APP?node-id=41-63&node-type=canvas&t=Pi7oEVKrmUc91GQj-1&scaling=min-zoom&content-scaling=fixed&page-id=35%3A2&starting-point-node-id=41%3A63&show-proto-sidebar=1" target="_blank" class="btn btn-dark" title="Ir al Figma">
+                                    <i class="fab fa-figma"></i>
+                                </a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 hover-overlay">
+                        <img src="./images/marketboxpreview.png" class="card-img-top" alt="MarketBox">
+                        <div class="overlay-content">
+                            <h3 data-es="MarketBox" data-en="MarketBox">MarketBox</h3>
+                            <p data-es="Pagina estilo eCommerce, inspirado en un estilo de Mercado Libre." data-en="eCommerce style page, inspired by Mercado Libre style.">Pagina estilo eCommerce, inspirado en un estilo de Mercado Libre.</p>
+                            <div class="skill-images-container">
+                            <i class="fab fa-react skill-icon" style="color: #61dafb" title="React"></i>
+                            <i class="fab fa-bootstrap skill-icon" style="color: #563d7c" title="Bootstrap"></i>
+                            </div>
+                            <div class="button-group">
+                                <a href="https://github.com/martinnricart/MarketBox/blob/main/NavegacionProyectoFinal.gif" target="_blank" class="btn btn-primary" title="Ir al Sitio Web"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/martinnricart/MarketBox" target="_blank" class="btn btn-secondary" title="Ir a GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Martin Ricart. Todos los derechos reservados.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </div>
+    
+    <script>
+        document.getElementById('translateBtn').addEventListener('click', function() {
+            const isEnglish = this.textContent === 'En';
+            this.textContent = isEnglish ? 'Es' : 'En';
+
+            document.querySelectorAll('[data-es]').forEach(el => {
+                el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-es');
+            });
+        });
+    </script>
+</body>
+</html>
