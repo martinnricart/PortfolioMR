@@ -205,19 +205,19 @@ html, body {
 .foto-about-container {
   display: flex;
   align-items: center; 
-  justify-content: space-between; /* Asegura que la imagen y el texto estén separados */
-  padding: 100px 15%; /* Añadido un padding para un mejor espaciado */
+  justify-content: space-between; 
+  padding: 100px 15%; 
 }
 .stack-title {
-  font-size: 2rem; /* Tamaño grande para destacar el texto */
-  font-weight: bold; /* Aumenta el grosor del texto */
-  color: #fff; /* Blanco para que se contraste bien con el fondo */
-  text-align: center; /* Centrado del texto */
-  text-transform: uppercase; /* Pone el texto en mayúsculas */
-  letter-spacing: 2px; /* Aumenta el espaciado entre letras */
-  margin-bottom: 10px; /* Espacio debajo del título */
-  margin-top: 10px; /* Espacio debajo del título */
-  position: relative; /* Necesario para el efecto adicional */
+  font-size: 2rem; 
+  font-weight: bold; 
+  color: #fff; 
+  text-align: center; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  margin-bottom: 10px; 
+  margin-top: 10px; 
+  position: relative; 
  
 }
 
@@ -225,38 +225,38 @@ html, body {
 
 @media (max-width: 768px) {
   .stack-title {
-    font-size: 1.5rem; /* Reduce el tamaño en pantallas más pequeñas */
+    font-size: 1.5rem;
   }
 }
 
 .fotocv {
   display: flex;
-  flex-direction: row; /* Por defecto, se muestra en fila */
-  margin-right: 70px; /* Aumenta la separación entre la imagen y el texto */
-  align-items: center; /* Alinea los elementos verticalmente */
-  justify-content: flex-start; /* Alinea los elementos al inicio en su contenedor */
+  flex-direction: row;
+  margin-right: 70px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 @media (max-width: 768px) {
   .fotocv {
-    flex-direction: column; /* En dispositivos móviles, se coloca la imagen y el texto en columna */
-    margin-right: 16px; /* Elimina la separación derecha en móviles */
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente */
+    flex-direction: column;
+    margin-right: 16px;
+    align-items: center;
+    justify-content: center; 
   }
 }
 
 .fotocv img {
-  width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
-  max-width: 400px; /* Tamaño máximo para la imagen */
+  width: 100%;
+  max-width: 400px;
   height: auto; 
   border-radius: 10%;
   box-shadow: 2px 2px 2px rgba(238, 202, 125, 0.5);
 }
 
 .about-text {
-  flex: 1; /* Permite que el texto ocupe el espacio restante */
-  margin-left: 20px; /* Añadido un margen izquierdo para separar el texto de la imagen */
+  flex: 1;
+  margin-left: 20px;
 }
 
 .about-text h1 {
@@ -281,7 +281,7 @@ a {
 
 
 .skills-section {
-  background-color: #333; /* Color de fondo */
+  background-color: #333;
   padding: 40px 0;
   text-align: center;
   color: white;
@@ -295,12 +295,12 @@ a {
 .skills-icons {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Reducido el espacio entre los íconos */
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .skill-icon {
-  font-size: 40px; /* Reducido el tamaño de los íconos */
+  font-size: 40px;
   transition: transform 0.3s;
   display: inline-flex;
   justify-content: center;
@@ -312,13 +312,13 @@ a {
 }
 
 .skill-img {
-  width: 50px; /* Aseguramos que la imagen tenga el mismo tamaño */
-  height: 50px; /* Aseguramos que la imagen tenga el mismo tamaño */
+  width: 50px;
+  height: 50px;
   transition: transform 0.3s;
 }
 
 .skill-img:hover {
-  transform: scale(1.2); /* Igual que en los íconos */
+  transform: scale(1.2);
 }
 
 /* ----------------Carrusel Section ---------- */
@@ -328,7 +328,7 @@ a {
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-200px * 7)); /* Ajustado el ancho de los slides */
+    -webkit-transform: translateX(calc(-200px * 7));
     transform: translateX(calc(-200px * 7));
   }
 }
@@ -339,7 +339,7 @@ a {
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-200px * 7)); /* Ajustado el ancho de los slides */
+    -webkit-transform: translateX(calc(-200px * 7)); 
     transform: translateX(calc(-200px * 7));
   }
 }
@@ -349,22 +349,22 @@ a {
   font-weight: 600;
   font-style: normal;
   padding: 1.2rem;
-  padding-top: 1rem; /* Reducido padding superior */
-  padding-bottom: 1rem; /* Reducido padding inferior */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #7663ce;
   width: 100%;
-  font-size: 24px; /* Ajustado el tamaño de fuente */
+  font-size: 24px;
 }
 
 @media (min-width: 350px) {
   .Carrusel-track h1 {
-    font-size: 20px; /* Font-size más pequeño para pantallas pequeñas */
+    font-size: 20px;
   }
 }
 
 .Carrusel {
-  background:#161616; 
-  height: 80px; /* Reducida la altura del carrusel */
+  background:#161616;
+  height: 80px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -376,7 +376,7 @@ a {
 .Carrusel::after {
   background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 80px; /* Reducido el tamaño de los gradientes */
+  height: 80px;
   position: absolute;
   width: 100px;
   z-index: 2;
@@ -385,7 +385,7 @@ a {
 @media (min-width: 450px) {
   .Carrusel::before,
   .Carrusel::after {
-    width: 150px; /* Reducido el tamaño en pantallas grandes */
+    width: 150px;
   }
 }
 
@@ -405,38 +405,38 @@ a {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(200px * 14); /* Ajustado el tamaño de las diapositivas */
+  width: calc(200px * 14);
 }
 
 .Carrusel .slide {
   align-items: center;
-  height: 80px; /* Ajustado el tamaño de las diapositivas */
-  width: 200px; /* Reducida la anchura de las diapositivas */
+  height: 80px;
+  width: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .skill-icon {
-  font-size: 40px; /* Ajustado el tamaño de los íconos */
-  margin-bottom: 8px; /* Reducido el margen entre el ícono y el texto */
+  font-size: 40px;
+  margin-bottom: 8px; 
 }
 
 .menu-toggle {
-  display: none; /* Ocultar el icono hamburguesa en pantallas grandes */
+  display: none;
 }
 
 @media (max-width: 767px) {
   .menu-toggle {
-      display: block; /* Mostrar botón de menú hamburguesa */
+      display: block;
       z-index: 9999;
       margin-right: 10px;
   }
 
   .nav-menu {
-      display: none; /* Ocultar el menú por defecto en móviles */
+      display: none;
       position: absolute;
-      top: 60px; /* Ajusta para que el menú se despliegue debajo del header */
+      top: 60px;
       left: 0;
       width: 100%;
       background-color: #161616;
@@ -456,11 +456,11 @@ a {
   }
 
   .nav-menu.active {
-      display: block; /* Mostrar el menú cuando se activa */
+      display: block;
   }
 
   .header-logo {
-      text-align: center; /* Mantén el logo centrado en móviles */
+      text-align: center;
   }
 
 
@@ -486,8 +486,8 @@ a {
   }
 
   .mainText {
-    flex-direction: column; 
-    margin-left: 75px;
+    text-align: center;
+    margin-left: 20px;
   }
 
   .bienvenida {
@@ -536,16 +536,16 @@ a {
   }
 
   .about-text {
-    text-align: center; /* Centra el texto */
-    padding: 0 10px; /* Añade un poco de espacio horizontal */
-    margin-left: 0; /* Elimina el margen izquierdo que podría desalinear el texto */
-    margin-right: 0; /* Asegura que no haya margen derecho extra */
+    text-align: center;
+    padding: 0 10px; 
+    margin-left: 0; 
+    margin-right: 0; 
   }
   
   .about-text p {
-    font-size: 16px; /* Tamaño de fuente ajustado */
-    max-width: 800px; /* Limita el ancho del párrafo para mejorar la legibilidad */
-    margin: 0 auto; /* Centra el párrafo dentro de su contenedor */
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto; 
   }
   .email-icon {
     width: 20px; 
@@ -567,30 +567,28 @@ a {
 
 /* Estilos para el botón de traducción con ID translateBtn */
 #translateBtn {
-  background-color: #000; /* Color de fondo del botón */
+  background-color: #000;
   color: rgb(231, 198, 9);
-  ; /* Color del texto del botón */
-  border: none; /* Sin bordes */
-  border-radius: 50px; /* Bordes redondeados */
-  padding: 8px 16px; /* Espaciado interno del botón */
-  font-size: 16px; /* Tamaño del texto */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
-  position: absolute; /* Posiciona el botón de manera absoluta dentro del contenedor */
-  right: 40px; /* Ajusta la distancia desde el borde derecho */
-  bottom: 10px; /* Ajusta la distancia desde el borde inferior */
-  z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+  border: none;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute; 
+  right: 40px;
+  bottom: 10px; 
+  z-index: 1000; 
 }
 
 #translateBtn:hover {
   background-color: rgb(231, 198, 9);
-  /* Color de fondo al pasar el mouse */
-  color: #000; /* Color del texto al pasar el mouse */
+  color: #000;
 }
 
 #translateBtn:focus {
-  outline: none; /* Quita el borde de enfoque predeterminado */
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Sombra alrededor del botón al estar en foco */
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); 
 }
 
 [data-en] {
@@ -598,21 +596,21 @@ a {
 }
 
 .availability-text {
-  color: #32CD32; /* Verde brillante */
-  font-size: 18px; /* Tamaño adecuado */
-  font-weight: bold; /* Hacer el texto más destacado */
-  text-align: center; /* Centrado */
-  margin-top: 20px; /* Espaciado superior */
-  clear: both; /* Asegura que el texto se coloque debajo de otros elementos flotantes */
-  background: linear-gradient(45deg, rgba(0,255,0,0.8), rgba(0,255,0,0.5), rgba(0,255,0,0.8)); /* Efecto de luz verde */
-  -webkit-background-clip: text; /* Prefijo para WebKit (Chrome, Safari, etc.) */
-  -moz-background-clip: text; /* Prefijo para Firefox */
-  background-clip: text; /* Propiedad estándar */
-  color: transparent; /* Hace que el texto sea transparente, solo se ve el gradiente */
-  padding: 5px 10px; /* Reducir el padding horizontal */
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Efecto de resplandor verde */
-  animation: glow 1.5s ease-in-out infinite; /* Animación de resplandor */
-  display: inline-block; /* Ajustar el contenedor al tamaño del texto */
+  color: #32CD32;
+  font-size: 18px; 
+  font-weight: bold; 
+  text-align: center; 
+  margin-top: 20px; 
+  clear: both; 
+  background: linear-gradient(45deg, rgba(0,255,0,0.8), rgba(0,255,0,0.5), rgba(0,255,0,0.8)); 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  padding: 5px 10px; 
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); 
+  animation: glow 1.5s ease-in-out infinite; 
+  display: inline-block; 
 }
 
 
@@ -631,30 +629,66 @@ a {
 }
 
 .social-spacing {
-  display: block; /* Hace que el texto se muestre en bloque */
-  margin-top: 10px; /* Ajusta el valor del espaciado según necesites */
+  display: block;
+  margin-top: 10px; 
 }
 
 
-/* Asegúrate de añadir esta clase a tu archivo CSS */
+
 .skill-images-container {
   display: flex;
-  gap: 10px; /* Espacio entre las imágenes */
+  gap: 10px;
   padding-bottom: 10px;
 }
 
 .skill-img {
-  width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+  width: 50px;
   height: auto;
 }
 .tailwind-img {
-  width: 45px; /* Ajusta el tamaño de la imagen según sea necesario */
-height: 35px;
+  width: 45px;
+height: 30px;
+margin-top: 6px;
+margin-left: 5px;
 transition: transform 0.3s;
 }
 
 .tailwind-img:hover {
-  transform: scale(1.2); /* Igual que en los íconos */
+  transform: scale(1.2);
+}
+
+.next-img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+  margin-top: -5px; 
+}
+
+.next-img:hover {
+  transform: scale(1.2); 
+}
+
+.ts-img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+  margin-top: -10px; 
+}
+
+.ts-img:hover {
+  transform: scale(1.2); 
+}
+
+.figma-img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+  margin-left: -5px;
+  margin-top: -5px; 
+}
+
+.figma-img:hover {
+  transform: scale(1.2);
 }
 
 .figmalogo{
