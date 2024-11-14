@@ -694,3 +694,7 @@ transition: transform 0.3s;
 .figmalogo{
   padding-bottom: 15px;
 }
+
+.demo-icon{
+  color: white;
+}
